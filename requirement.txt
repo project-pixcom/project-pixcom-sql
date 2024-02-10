@@ -1,0 +1,7 @@
+Flask
+
+gunicorn
+
+pyodbc
+
+google-cloud-dialogflow

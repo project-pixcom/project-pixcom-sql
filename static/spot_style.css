@@ -1,0 +1,258 @@
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  width: 100%;
+  color:#fff;   
+  
+  background-color: #000;
+  align-items: center;
+  display: flex;
+  overflow:auto;
+  flex-direction: column;
+}
+body::-webkit-scrollbar {
+  width: 0px;
+
+}
+.home-button {
+    bottom: 19px;
+    position: fixed;
+    left: 24px;
+    font-size: xx-large;
+    cursor: pointer;
+    color: #fff;
+}
+.checklist-container {
+    background: transparent;
+    margin: 10px;
+    padding: 9px;
+    width: 258px;
+    height: 165px;
+    border-radius: 10px;
+    color: floralwhite;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border: 3px solid #ecd018;
+}
+
+/* Style the heading */
+.checklist-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:#000;
+  padding:10px;
+  background-color:#bdbcb2;
+}
+
+/* Style the checklist logo */
+.checklist-logo {
+  color: green; /* You can change the color as needed */
+}
+.checkbox-container i{
+  display:none;
+}
+/* Style the checkboxes and their labels */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: space-between;
+  cursor:pointer;
+}
+.checkbox-label {
+  margin-left: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color:#0000;
+; /* Thumb color */
+}
+.content {
+  height: 100%;
+  width: 100%;
+  max-width: 730px;
+  text-align: center;
+  display: flex;
+  margin: 3vh auto; /* Centering the content horizontally */
+  flex-direction: column;
+  align-items: center;
+}
+
+.content > img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  margin:5px 10px;
+  
+}
+
+.cls {
+  font-size: 3vw;
+  width: 100%;
+  margin: 10px 10px;
+}
+
+.par {
+  font-size: 2vw;
+  width: 100%;
+  margin: 10px 10px;
+}
+
+.name {
+  font-size: 5vw;
+  width: 100%;
+  margin: 10px 10px;
+}
+
+.button-container {
+    display: flex;
+  flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.button-container button {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    overflow:hidden;
+    margin: 10px;
+    padding: 0px;
+    /* margin-bottom: 50px; */
+    width: 285px;
+    height: 187px;
+    border-radius: 10px;
+    color: floralwhite;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border: 3px solid #ecd018;
+    flex-wrap: wrap;
+  align-content: center;
+}
+.button-container button:hover{
+  border:3px solid #fff;
+  background:transparent;
+  color:#ecd018;
+
+}
+.btn-con{
+  display:flex;
+}
+#show-btn,#key-btn{
+background-color:#0a0804;
+}
+.checkbox-container:hover{
+  border:3px solid #fff;
+  background:transparent;
+  color:#ecd018;
+}
+#content-text{
+  display:none;
+  
+}
+@media only screen and (max-width: 980px) {
+  
+  
+  .content > img {
+   
+    height: 100px;
+    max-width:250px;
+   
+  }
+
+  .cls {
+    font-size: 36px;
+    font-weight: 500;
+    width: 100%;
+    
+  }
+
+  .name {
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  .par {
+    font-size: xx-large;
+    width: 100%;
+  }
+
+  
+  .btn-con{
+    display:flex;
+    flex-direction:column;
+  }
+}
+.cls-myVideo {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    
+    /* padding: 0px; */
+    /* margin: -87px; */
+    /* margin-left: -99px; */
+    border-radius: 16px;
+}
+#message-div{
+  display:none;
+}
+.mic{
+  position:fixed;
+  bottom:2vh;
+  right:2vh;
+  width:11vh;
+  padding:0px;
+}
+.startshow-btn-cap ,.keyreveal-btn-cap,.endshow-btn-cap {
+    z-index: 2;
+    margin:5vh;
+    position: absolute;
+}
+.endshow-image{
+ 
+  height: 100%;    /* Maintain the image's aspect ratio */
+  display: block;  /* Remove extra space below the image */
+  margin: auto;
+}
+#yesButton{
+  display:none;
+}
+.mic img {
+    width: 100%; /* Make the image fill the entire button */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block; /* Remove extra spacing beneath the image */
+}
+#disable-checklist{
+  display:none;
+      margin-left: 15px;
+      /* border: 2px solid #04eb97; */
+      color: #fbfffe;
+      background-color: #06fa1b;
+      padding: 2px 9px;
+      border-radius: 3px;
+      box-shadow: 0px 0px 8px 1.5px #06fa1b;
+      cursor:pointer;
+}
+#enable-checklist {
+    margin-left: 15px;
+    /* border: 2px solid #04eb97; */
+    color: #fbfffe;
+    background-color: #06fa1b;
+    padding: 2px 9px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px 1.5px #06fa1b;
+  cursor:pointer;
+
+}

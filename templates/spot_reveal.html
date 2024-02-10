@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="/static/spot_style.css">
+  <link rel="stylesheet" type="text/css" href="/static/aibutton.css">
+
+</head>
+<body>
+      <div class="content content-overlay" >
+        <img src="/static/bgimage.png" alt="" class="Logo">
+        <div id="content-text">
+        <div class="cls">Congratulations</div>
+        <div class="name">{{content.name}}</div>
+        <div class="par">To own your {{content.model}}</div>
+        <div class="par">{{content.room}}</div>
+        
+
+        </div>
+        <div class="par" id="message-div">{{content.message}}</div>
+        <div class="button-container">
+          <div class="btn-con">
+            <div class="checklist-container">
+              <!-- Heading -->
+              <div class="checklist-heading">
+                <div style="display:flex;"><div>Checklist</div> <div id="enable-checklist"   onclick="enable_checklist()">Enable</div><div id="disable-checklist" onclick="disable_checklist()">Disable</div></div>
+                <i class="fa-solid fa-clipboard-check fa-xl" style="color: #000;"></i>
+              </div>
+
+              <!-- Checkboxes with text -->
+              <div class="checkbox-container" onclick="lightcheck()">
+                <label class="checkbox-label" for="checkbox1">Light Check</label>
+                <i class="fa-solid fa-square-check" id="ligth-check"></i>
+                
+              </div>
+
+              <div class="checkbox-container" onclick="displayContent()">
+                <label class="checkbox-label" for="checkbox2">Content Check</label>
+                <i class="fa-solid fa-square-check" id="content-check"></i>
+              </div>
+
+              <div class="checkbox-container" >
+                <label class="checkbox-label" for="checkbox3">Motor Check</label>&nbsp;<div class onclick="motorupcheck()">UP </div>
+                <i class="fa-solid fa-square-check " id="motor-up" ></i>
+                &nbsp;  <div onclick="motordowncheck()"> Down     </div>         <i class="fa-solid fa-square-check" id="motor-down" ></i>
+
+              </div>
+
+              <div class="checkbox-container" onclick="messagecheck()">
+                <label class="checkbox-label" for="checkbox4">Message Check</label>
+                <i class="fa-solid fa-square-check" id="message-check"></i>
+
+
+              </div>
+            </div>
+            <button onclick="startshow()" id="show-btn">
+              
+              <div class="startshow-btn-cap" id="startshow-btn-cap">Start Show</div>
+            <video id="show-video"  class="cls-myVideo " >
+              <source src="/static/startshow.mp4" type="video/mp4">
+              Key Reveal
+            </video></button>
+          
+          </div>
+          <div class="btn-con">
+            <button onclick="keyup()" id="key-btn">
+              <div class="keyreveal-btn-cap" id="keyreveal-btn-cap">Key Reveal</div>
+              <video id="key-video"  class="cls-myVideo " >
+                <source src="/static/keyreveal.mp4" type="video/mp4">
+                Key Reveal
+              </video>
+            </button>
+
+            <button onclick="endshow()">
+              <div class="endshow-btn-cap" id="endshow-btn-cap">End Show</div>
+             <img src="static/endshow.jpg" alt="" class="endshow-image ">
+            </button>
+          </div>
+        </div>
+
+    </div>
+  <div class="mic">
+    <button id="yesButton"><img src="static/aienable.jpeg" style="" alt="AI Enable"></button>
+    <button id="noButton" class="active"><img src="static/aidisable.jpeg" style="" alt="AI Enable"></button>
+  </div>
+  <div><a href="/" class="home-button">Home</a></div>
+  <script src="https://kit.fontawesome.com/7f52b01bbe.js" crossorigin="anonymous"></script> 
+  <script src="/static/spot_script.js"></script> 
+  <!-- <script src="/static/aibutton.js"></script>  -->
+</body>
+</html>
