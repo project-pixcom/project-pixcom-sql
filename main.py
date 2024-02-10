@@ -345,5 +345,5 @@ def send_text_to_dialogflow(text):
 
 
 if __name__ == "__main__":
-  app.run(ssl_context='adhoc')
+  app.run(debug='true',host="0.0.0.0")
 
