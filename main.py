@@ -179,8 +179,13 @@ def receive_text_data():
   elif intent_name == "select-app" or intent_name == "edit-app" or intent_name == "delete-app":
     rec_num_ordinal = response.query_result.parameters['ordinal']
     rec_num_number = response.query_result.parameters['number']
-    rec_num = rec_num_ordinal if rec_num_number == '' else rec_num_number
-
+    rec_num_number1 = response.query_result.parameters['num']
+    if rec_num_ordinal:
+      rec_num = rec_num_ordinal
+    elif rec_num_number:
+      rec_num = rec_num_number
+    elif rec_num_number1:
+      rec_num = rec_num_number1
     return jsonify({
         "intent_name": intent_name,
         "fullfilment_text": fullfilment_text,

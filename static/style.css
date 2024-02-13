@@ -307,11 +307,12 @@ border-radius: 5px; /* Optional: Add border-radius for rounded corners */
     display: flex;
     /* flex-direction: column; */
 }
+.car-info{
+  gap:30px;
+}
 .init-content {
-  /* border: 1px solid #ddd; /* Add a border for better visibility */ */
   margin-bottom: 10px;   /* Add margin to separate each appointment */
   padding: 10px;          /* Add padding for better spacing */
-  /* border-radius: 5px;     /* Add rounded corners for a modern look */ */
 }
 .content-title {
   font-size: 18px;        /* Increase font size for the title */
