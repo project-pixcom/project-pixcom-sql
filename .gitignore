@@ -95,6 +95,8 @@ ipython_config.py
 #Pipfile.lock
 
 cred.json
+cert.pem
+key.pem
 
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.

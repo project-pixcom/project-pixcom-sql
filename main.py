@@ -1,11 +1,9 @@
 from flask import Flask, render_template, request, make_response, jsonify
-from pymongo import MongoClient
 import base64
 import os
 from google.cloud import dialogflow_v2 as dialogflow_v2
 import uuid
 import json
-from bson import ObjectId
 from datetime import datetime
 import pyodbc
 
@@ -350,5 +348,5 @@ def send_text_to_dialogflow(text):
 
 
 if __name__ == "__main__":
-  app.run(debug='true',host="0.0.0.0")
+  app.run(debug=False,host="0.0.0.0")
 
